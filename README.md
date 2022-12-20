@@ -45,25 +45,27 @@ So the files to check and play around are:
 
  - [Source Code Pro](https://adobe-fonts.github.io/source-code-pro/)
 
-### More IDE customization
+### More Tools and IDE customization
 
  - [Setting up Rust in VSCode for Linux](https://nayabsd.com/setting-up-rust-in-vs-code-for-linux)
  - [Developing in Rust using Visual Studio Code](https://dev.to/thiagomg/developing-in-rust-using-visual-studio-code-4kkl)
  - [Rust recommended VSCode Extensions](https://www.becomebetterprogrammer.com/rust-recommended-vscode-extensions/)
  - [Best fonts for programming with VSCode](https://toastofcode.com/best-fonts-for-programming-with-vscode/)
  - [The best VSCode themes](https://medium.com/quick-code/the-best-vs-code-themes-2022-9e9b648c4596)
+ - [4 Rust VSCode Plugins for your IDE](https://21-lessons.com/4-rust-vscode-plugins-you-need-to-build-your-rust-ide-in-2022/)
+ - [Rust Developer Tools you should know](https://refaktory.net/blog/posts/2021-09-21-rust-developer-tools-you-should-know/)
 
 ## Rust Programming Language Knowledge Base
 
  - [A half hour to learn Rust](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
- - [How not to learn Rust](https://dystroy.org/blog/how-not-to-learn-rust/)
- - [Rust cheatsheet](https://cheats.rs/)
+ - [How NOT to learn Rust](https://dystroy.org/blog/how-not-to-learn-rust/)
+ - [Rust Cheatsheet](https://cheats.rs/)
  - [Rust The Book](https://doc.rust-lang.org/stable/book/)
- - [Rust gentle intro](https://stevedonovan.github.io/rust-gentle-intro/)
+ - [Rust gentle Intro](https://stevedonovan.github.io/rust-gentle-intro/)
 
 ## License
 
-    Copyright 2022 Fernando Cejas
+    Copyright 2023 Fernando Cejas
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
