@@ -10,8 +10,8 @@ This git repository serves as a **Rust Playground** to learn and understand the 
 
 Each part that I learned is split up into **different sub-projects** that will address different parts of the language. Feel free to **fork** or **clone** this project and do not hesitate to **contribute/collaborate**. 
 
- - [00-intro](): 
- - [01-]():
+ - [00-intro](/00-intro): 
+ - [01-cli-quick-replace](/01-cli-quick-replace):
 
 ## Rust Installation
 
