@@ -1,32 +1,23 @@
-## Rust Proactive Introduction
+## Rust Proactive Learning
 
-The code is a bit messy but it serves just as a personal Rust Playground to play around and understand the language. You can use to explore language feature and try things out. This `README.md` file will help you setup the IDE too. For managing the [Rust Programming Language](https://www.rust-lang.org/), I use [asdf](https://asdf-vm.com/).
+This git repository serves as a **Rust Playground** to learn and understand the language:
+ 
+ - I wrote a **blog post**: [How to learn a new programming language: Rust]() which will serve as a guide for the purpose.
+ - This `README.md` file will help you **setup the IDE and tooling** necessary to get started.
+ - The `README.md` also contains **references, books and material** I used to dive deeper into Rust. 
 
-## Run the project
+## Repo Organization
 
- - `cargo run`
+Each part that I learned is split up into **different sub-projects** that will address different parts of the language. Feel free to **fork** or **clone** this project and do not hesitate to **contribute/collaborate**. 
 
-## Messy code structure
+ - [00-intro](): 
+ - [01-]():
 
-```rust
-#[path="basic.rs"] mod basic;
-#[path="intermediate.rs"] mod intermediate;
-#[path="advanced.rs"] mod advanced;
+## Rust Installation
 
-fn main() {
-    basic::basic_rust();
-    intermediate::intermediate_rust();
-    advanced::advanced_rust();
-}
-```
+For managing [Rust Programming Language](https://www.rust-lang.org/) installation and versions, I use [asdf](https://asdf-vm.com/).
 
-So the files to check and play around are:
-
- - `basic.rs`
- - `intermediate.rs`
- - `advanced.rs`
-
-## Setup IDE (VSCode)
+## IDE Setup for VSCode or [Code-OSS](https://wiki.archlinux.org/title/Visual_Studio_Code) (Arch Linux Open Source Version)
 
 ### Extensions
 
@@ -55,12 +46,23 @@ So the files to check and play around are:
  - [4 Rust VSCode Plugins for your IDE](https://21-lessons.com/4-rust-vscode-plugins-you-need-to-build-your-rust-ide-in-2022/)
  - [Rust Developer Tools you should know](https://refaktory.net/blog/posts/2021-09-21-rust-developer-tools-you-should-know/)
 
-## Rust Programming Language Knowledge Base
+### IDE Useful shortcuts 
+
+ - [VSCode Shortcuts for Productivity](https://www.crio.do/blog/vs-code-shortcuts/)
+ - [VSCode Useful Shortcuts](https://itsfoss.com/vs-code-shortcuts/)
+ - [VSCode Productivity Shorcuts](https://betterprogramming.pub/15-useful-vscode-shortcuts-to-boost-your-productivity-415de3cb1910)
+
+## Rust Programming Books
+
+ - [Rust The Book](https://doc.rust-lang.org/stable/book/)
+ - [Rust for Rustaceans](https://www.goodreads.com/book/show/58244064-rust-for-rustaceans)
+ - [Programming Rust 2nd Edition](https://www.goodreads.com/book/show/57570286-programming-rust-2nd-edition)
+
+## Rust Programming Blog Posts
 
  - [A half hour to learn Rust](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
  - [How NOT to learn Rust](https://dystroy.org/blog/how-not-to-learn-rust/)
  - [Rust Cheatsheet](https://cheats.rs/)
- - [Rust The Book](https://doc.rust-lang.org/stable/book/)
  - [Rust gentle Intro](https://stevedonovan.github.io/rust-gentle-intro/)
 
 ## License
