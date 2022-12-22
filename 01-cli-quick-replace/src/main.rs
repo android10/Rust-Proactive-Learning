@@ -1,9 +1,35 @@
 use std::env;
+use std::fs;
 use text_colorizer::*;
-
+use regex::Regex;
 
 fn main() {
     let args = parse_arguments();
+
+    let data = match fs::read_to_string(&args.filename) {
+        Ok(value) => value,
+        Err(error) => {
+            eprintln!("{} failed to write to file '{}': {:?}", "Error: ".red().bold(), args.filename, error);
+            std::process::exit(1);
+        }
+    };
+
+    let replaced_data = match replace(&args.target, &args.replacement, &data) {
+        Ok(value) => value,
+        Err(error) => {
+            eprintln!("{} failed to replace text: {:?}", "Error: ".red().bold(), error);
+            std::process::exit(1);
+        }
+    };
+
+    match fs::write(&args.output, &replaced_data) {
+        Ok(_) => {},
+        Err(error) => {
+            eprintln!("{} failed to write to file '{}': {:?}", "Error: ".red().bold(), args.filename, error);
+            std::process::exit(1);
+        }
+    }
+
     println!("{:?}", args);
 }
 
@@ -27,6 +53,11 @@ fn parse_arguments() -> Arguments {
         filename: args[2].clone(), 
         output: args[3].clone()
     }
+}
+
+fn replace(target: &str, replacement: &str, text: &str) -> Result<String, regex::Error> {
+    let regex = Regex::new(target)?;
+    Ok(regex.replace_all(text, replacement).to_string())
 }
 
 #[derive(Debug)]
