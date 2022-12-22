@@ -51,6 +51,11 @@ For managing [Rust Programming Language](https://www.rust-lang.org/) installatio
  - [VSCode Shortcuts for Productivity](https://www.crio.do/blog/vs-code-shortcuts/)
  - [VSCode Useful Shortcuts](https://itsfoss.com/vs-code-shortcuts/)
  - [VSCode Productivity Shorcuts](https://betterprogramming.pub/15-useful-vscode-shortcuts-to-boost-your-productivity-415de3cb1910)
+ - [VSCode Shortcuts for Faster Coding](https://www.agiratech.com/20-vs-code-shortcuts-for-faster-coding)
+
+### IDE Tips and Tricks
+
+ - [VSCode Tips and Tricks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
 
 ## Rust Programming Books
 
