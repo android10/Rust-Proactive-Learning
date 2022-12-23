@@ -5,12 +5,12 @@ use regex::Regex;
 
 fn main() {
     let args = parse_arguments();
-
+    
     let data = match fs::read_to_string(&args.filename) {
         Ok(value) => value,
         Err(error) => {
             eprintln!("{} failed to write to file '{}': {:?}", "Error: ".red().bold(), args.filename, error);
-            std::process::exit(1);
+            exit();
         }
     };
 
@@ -18,7 +18,7 @@ fn main() {
         Ok(value) => value,
         Err(error) => {
             eprintln!("{} failed to replace text: {:?}", "Error: ".red().bold(), error);
-            std::process::exit(1);
+            exit();
         }
     };
 
@@ -26,7 +26,7 @@ fn main() {
         Ok(_) => {},
         Err(error) => {
             eprintln!("{} failed to write to file '{}': {:?}", "Error: ".red().bold(), args.filename, error);
-            std::process::exit(1);
+            exit();
         }
     }
 
@@ -44,7 +44,7 @@ fn parse_arguments() -> Arguments {
     if args.len() != 4 {
         print_cli_usage();
         eprintln!("{} wrong number of arguments: expected 4, got {}.", "Error: ".red().bold(), args.len());
-        std::process::exit(1);
+        exit();
     }
 
     Arguments { 
@@ -58,6 +58,10 @@ fn parse_arguments() -> Arguments {
 fn replace(target: &str, replacement: &str, text: &str) -> Result<String, regex::Error> {
     let regex = Regex::new(target)?;
     Ok(regex.replace_all(text, replacement).to_string())
+}
+
+fn exit() -> ! {
+    std::process::exit(1)
 }
 
 #[derive(Debug)]
