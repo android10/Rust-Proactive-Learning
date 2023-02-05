@@ -24,7 +24,11 @@ fn box_references() {
 }
 
 fn vectors() {
-    let mut primes = vec![2, 3, 5, 7];
+    let primes = vec![2, 3, 5, 7];
     assert_eq!(primes.len(), 4);
     assert_eq!(primes.iter().product::<i32>(), 210);
+
+    let my_vector: Vec<i32> = (0..5).collect();
+    assert_eq!(my_vector.len(), 5);
+    assert_eq!(my_vector, vec![0, 1, 2, 3, 4]);
 }
